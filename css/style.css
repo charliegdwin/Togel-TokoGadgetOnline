@@ -252,6 +252,7 @@ footer{
 }
 body{
 	font-family: 'Roboto', sans-serif;
+	background-color: white;
 }
 .header{
 	background: radial-gradient(#fff,#F0F8FF);
