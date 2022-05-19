@@ -254,7 +254,7 @@ body{
 	font-family: 'Roboto', sans-serif;
 }
 .header{
-	color: radial-gradient(#fff,#F0F8FF);
+	background: radial-gradient(#fff,#F0F8FF);
 }
 .header .row{
 	margin-top: 70px;
