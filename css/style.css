@@ -1,0 +1,46 @@
+/* BAGIAN CSS Registrasi */
+*{
+	padding:0;
+	margin:0;
+	font-family: 'Roboto', 'Quicksand';
+}
+body {
+	background-color: #f8f8f8;
+	
+}
+#bg-registrasi{
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+}
+.box-registrasi{
+	width: 470px;
+	min-height: 300px;
+	border: 1px solid #ccc;
+	background-color: #fff;
+	padding: 15px;
+	box-sizing: border-box;
+}
+.box-registrasi h1{
+	text-align: center;
+	color: #504FEC;
+	margin-bottom: 15px;
+}
+.input-controlfrom{
+	width: 170%;
+	padding: 10px;
+	margin-bottom: 15px;
+	box-sizing: border-box;
+}
+.tombolregistrasi{
+	width: 170%;
+	padding: 15px;
+	margin-bottom: 15px;
+	box-sizing: border-box;
+	background-color: #504FEC ;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	font-size: 20px;
+}
