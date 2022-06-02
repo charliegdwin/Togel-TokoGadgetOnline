@@ -9,9 +9,11 @@ body{
 }
 .header{
 	background: radial-gradient(#fff,#F0F8FF);
+
 }
 .header .row{
-	margin-top: 150px;
+	margin-top: 100px;
+	margin-bottom: 50px;
 }
 .navbar{
 	display: flex;
@@ -53,13 +55,14 @@ p{
 .col-2{
 	flex-basis: 50%;
 	min-width: 300px;
+	margin-bottom: 50px;
 }
 .col-2 img{
 	max-width: 100%;
 	padding: 50px 0;
 }
 .col-2 h1{
-	font-size: 50px;
+	font-size: 53px;
 	line-height: 60px;
 	margin: 25px 0;
 }
@@ -153,7 +156,8 @@ h4{
 	margin-top: 80px;
 	padding: 30px 0;
 }
-.col-2 .offer-img{
+
+.col-2offer .offer-img{
 	padding: 50px;
 }
 
