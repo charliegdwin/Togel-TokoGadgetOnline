@@ -58,8 +58,8 @@ p{
 	margin-bottom: 50px;
 }
 .col-2 img{
-	max-width: 100%;
 	padding: 50px 0;
+	width: 700px;
 }
 .col-2 h1{
 	font-size: 53px;
