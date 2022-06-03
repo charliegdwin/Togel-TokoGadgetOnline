@@ -61,6 +61,10 @@ p{
 	padding: 50px 0;
 	width: 700px;
 }
+.col-2offer{
+	padding: 50px 0;
+	max-width: 100%;
+}
 .col-2 h1{
 	font-size: 53px;
 	line-height: 60px;
