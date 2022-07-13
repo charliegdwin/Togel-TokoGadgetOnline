@@ -1,0 +1,613 @@
+/*  HALAMAN HOME */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+}
+.tabelkategori{
+  width: 100%;
+  border-collapse: collapse;
+}
+.tabelkategori tr {
+  height: 30px;
+
+}
+.tabelkategori tr td {
+  padding: 15px 25px;
+}
+.btneditkategori{
+  box-sizing: border-box;
+  cursor: pointer;
+  wdisplay: inline-block;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  background: #504FEC ;
+  color: #fff;
+  padding: 3px;
+  border-radius: 30px;
+  transition: background 0.5s;
+
+  width: 40%;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 100%;
+  justify-content: left;
+  align-items: right;
+}
+.btneditkategori:hover {
+  background: #563434;
+}
+.header{
+  background: radial-gradient(#fff,#F0F8FF);
+  background: #fff;
+
+}
+.cart{
+  color: #504FEC;
+}
+
+.header .row{
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+.navbar{
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+.navi{
+  flex: 1;
+  text-align: right;
+  color: #fff;
+    text-decoration: none;
+        padding: 7px 25px;
+        display: inline-block;
+}
+.navi ul{
+  display: inline-block;
+  list-style-type: none;
+}
+.navi ul li{
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.aa{
+  text-decoration: none;
+  color: #555;
+  margin-right: 15px;
+}
+p{
+  color: #555;
+  padding-bottom: 15px;
+}
+.container{
+  max-width: 1300px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.containerh{
+  max-width: 1500px;
+  width: 100%;
+  margin-top: 30px;
+  padding-left: 120px;
+  background: white;
+  padding-right: 55px;
+
+}
+
+.search {
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+
+}
+.search1{
+  width: 90%;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #504FEC;
+  border-right: none;
+  padding: 3px;
+  height: 45px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #504FEC;
+}
+
+.searchTerm:focus{
+  color: black;
+}
+
+.searchButton {
+  width: 40px;
+  height: 45px;
+  border: 1px solid #504FEC;
+  background: #504FEC;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.containerp{
+  width: 50%;
+  margin:0 auto;
+  margin-bottom: -50px;
+}
+.containerp:after {
+  content: '';
+  display: block;
+  clear: both;
+
+}
+.search form{
+
+}
+.row{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.col-2{
+  flex-basis: 50%;
+  min-width: 300px;
+  margin-bottom: 50px;
+}
+.col-2 img{
+  padding: 50px 0;
+  width: 700px;
+}
+.col-2offer{
+  padding: 50px 0;
+  max-width: 100%;
+}
+.col-2 h1{
+  font-size: 53px;
+  line-height: 60px;
+  margin: 25px 0;
+}
+.btn{
+  display: inline-block;
+  align-items: center;
+  background: #504FEC ;
+  color: #fff;
+  padding: 8px 30px;
+  margin: 30px 0;
+  border-radius: 30px;
+  transition: background 0.5s;
+}
+
+.btn:hover {
+  background: #563434;
+}
+
+/*  -------- kategori ------- */
+.categories{
+  margin: 70px 0;
+}
+.col-5{
+  flex-basis: 15%;
+  min-width: 50px;
+  margin-bottom: 10px;
+}
+.col-5 img{
+  width: 150px;
+}
+.small-container{
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.col-4{
+  flex-basis: 20%;
+  min-width: 200px;
+  margin-bottom: 50px;
+  transition: transform 0.5s;
+}
+.col-4:hover{
+  transform: translateY(-5px);
+}
+.col-4 img{
+  width: 220px;
+  margin-bottom: 5px;
+}
+.col-4 h4{
+  text-align: left;
+  margin-bottom: 5px;
+}
+.col-4 p{
+  text-align: left;
+  margin-bottom: 5px;
+}
+.title{
+  text-align: center;
+  margin: 0 auto 80px;
+  position: relative;
+  line-height: 60px;
+  color: #555;
+}
+.title::after{
+  content: '';
+  background: #ff523b;
+  width: 80px;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+h4{
+  color: #555;
+  font-weight: normal;
+}
+.col-4{
+  font-size: 14px;
+}
+.rating {
+  color: gold;
+  margin-bottom: 5px;
+}
+/*  -------- offer ------- */
+.offer{
+  background: radial-gradient(#fff,#F0F8FF);
+  margin-top: 80px;
+  padding: 30px 0;
+}
+
+.col-2offer .offer-img{
+  padding: 50px;
+}
+
+/*  -------- testimonial ------- */
+.testimonial{
+  padding-top: 100px;
+}
+.col-3{
+  flex-basis: 30%;
+  min-width: 50px;
+  margin-bottom: 20px;
+}
+.col-3 img{
+  width: 250px;
+}
+.testimonial .col-3{
+  text-align: center;
+  padding: 40px 20px;
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+.testimonial .col-3 img{
+  width: 50px;
+  margin-top: 20px;
+  border-radius: 50%;
+}
+.testimonial .col-3:hover{
+  transform: translateY(-10px);
+}
+.fa-solid.fa-quote-left{
+  font-size: 34px;
+  color: gold;
+}
+.col-3 p{
+  font-size: 12px;
+  margin: 12px 0;
+  color: #777;
+}
+.testimonial .col-3 h3{
+  font-weight: 600;
+  color: #555;
+  font-size: 16px;
+}
+.brands{
+  margin: 50px auto;
+  margin-top: -20px;
+}
+.button{
+  display: inline-block;
+  margin-top: 12px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+.button input[type="submit"]{
+  color: #fff;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: #504FEC;
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+.button input[type="button"]:hover{
+  background: #504FEC;
+}
+
+
+/*  -------- footer ------- */
+footer{
+  padding: 20px 0;
+  background-color: #333;
+  color: #fff;
+}
+.containerfooter{
+  width: 80%;
+  margin:0 auto;
+}
+.containerfooter:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.footer{
+  background: #000;
+  color: #8a8a8a;
+  font-size: 14px;
+  padding: 60px 0 20px;
+}
+.footer p{
+  color: #8a8a8a;
+}
+
+.footer-col-1, .footer-col-2, .footer-col-3{
+  min-width: 250px;
+  margin-bottom: 20px;
+}
+.footer-col-1{
+  flex-basis: 30%;
+  align-items: center;
+}
+.footer-col-1 h4{
+  color: gold;
+}
+
+.footer-col-2{
+  flex: 1;
+  text-align: center;
+}
+.footer-col-2 img{
+  width: 200px;
+  margin-bottom: 0;
+}
+
+
+.footer-col-3{
+  flex-basis: 30%;
+  text-align: center;
+}
+ul{
+  list-style-type: none;
+}
+.copyright{
+  text-align: center;
+}
+
+/*  -------- All Products ------- */
+.row-1{
+  justify-content: center;
+  margin: 10px;
+}
+.row-2{
+  justify-content: space-between;
+  margin: 100px auto 50px;
+}
+select{
+  border: 1px solid #504FEC;
+  padding: 5px;
+
+}
+select:focus{
+  outline: none;
+}
+.page-btn{
+  display: inline-block;
+  border: 1px solid #ff523b;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+  border-color: #504FEC;
+  color: #fff;
+  padding: 8px 30px;
+  margin: 30px 0;
+  border-radius: 30px;
+  line-height: 40px;
+  cursor: pointer;
+}
+.page-btn:hover{
+  border: 3px solid #ff523b;
+}
+
+
+/*  -------- responsive ------- */
+.menu-icon{
+  width: 28px;
+  margin-left: 20px;
+  display: none;
+}
+
+.account-page{
+  padding: 50px 0;
+  background: radial-gradient(#fff,#F0F8FF);
+}
+
+
+#LoginForm{
+  left: -300px;
+}
+#RegForm{
+  left: 0;
+}
+
+#Indicator{
+  width: 100px;
+  border: none;
+  background: #ff523b;
+  height: 3px;
+  margin-top: 8px;
+  transform: translateX(100px);
+}
+
+/*  -------- media query untuk menu kurang dari 800px------- */
+@media only screen and (max-width: 800px){
+  nav ul{
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background: #333;
+    width: 100%;
+    overflow: hidden;
+    transition: max-height 0.5s;
+  }
+
+  nav ul li{
+    display: block;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  nav ul li a{
+    color: #fff;
+  }
+  .menu-icon{
+    display: block;
+    cursor: pointer;
+  }
+}
+
+/*  -------- media query untuk menu kurang dari 600px------- */
+@media only screen and (max-width: 600px){
+      .row{
+        text-align: center;
+      }
+      .col2 .col-3 .col-4{
+        flex-basis: 100%;
+      }
+  }
+}
+body{
+    background: #f5f5f5;
+    margin-top:20px;
+}
+
+.ui-w-80 {
+    width: 80px !important;
+    height: auto;
+}
+
+.btn-default {
+    border-color: rgba(24,28,33,0.1);
+    background: rgba(0,0,0,0);
+    color: #4E5155;
+}
+
+label.btn {
+    margin-bottom: 0;
+}
+
+.btn-outline-primary {
+    border-color: #26B4FF;
+    background: transparent;
+    color: #26B4FF;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.text-light {
+    color: #babbbc !important;
+}
+
+.btn-facebook {
+    border-color: rgba(0,0,0,0);
+    background: #3B5998;
+    color: #fff;
+}
+
+.btn-instagram {
+    border-color: rgba(0,0,0,0);
+    background: #000;
+    color: #fff;
+}
+
+.card {
+    background-clip: padding-box;
+    box-shadow: 0 1px 4px rgba(24,28,33,0.012);
+}
+
+.row-bordered {
+    overflow: hidden;
+}
+
+.account-settings-fileinput {
+    position: absolute;
+    visibility: hidden;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+.account-settings-links .list-group-item.active {
+    font-weight: bold !important;
+}
+html:not(.dark-style) .account-settings-links .list-group-item.active {
+    background: transparent !important;
+}
+.account-settings-multiselect ~ .select2-container {
+    width: 100% !important;
+}
+.light-style .account-settings-links .list-group-item {
+    padding: 0.85rem 1.5rem;
+    border-color: rgba(24, 28, 33, 0.03) !important;
+}
+.light-style .account-settings-links .list-group-item.active {
+    color: #4e5155 !important;
+}
+.material-style .account-settings-links .list-group-item {
+    padding: 0.85rem 1.5rem;
+    border-color: rgba(24, 28, 33, 0.03) !important;
+}
+.material-style .account-settings-links .list-group-item.active {
+    color: #4e5155 !important;
+}
+.dark-style .account-settings-links .list-group-item {
+    padding: 0.85rem 1.5rem;
+    border-color: rgba(255, 255, 255, 0.03) !important;
+}
+.dark-style .account-settings-links .list-group-item.active {
+    color: #fff !important;
+}
+.light-style .account-settings-links .list-group-item.active {
+    color: #4E5155 !important;
+}
+.light-style .account-settings-links .list-group-item {
+    padding: 0.85rem 1.5rem;
+    border-color: rgba(24,28,33,0.03) !important;
+}
+
