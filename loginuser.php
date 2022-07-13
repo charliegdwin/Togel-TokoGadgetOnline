@@ -11,13 +11,13 @@ include 'koneksi.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/style-login.css">
-    <title>Login | Toko Gadget Online</title>
+    <title>Login User | Toko Gadget Online</title>
 </head>
 <body>
  
     <div class="container">
         <form action="" method="POST" class="login-email">
-            <p class="login-text" style="font-size: 2rem; font-weight: 800;">Login Admin
+            <p class="login-text" style="font-size: 2rem; font-weight: 800;">Login User
             </p>
             <img class="logo" src="images/logo_long.png">
             <div class="input-group">
@@ -30,6 +30,7 @@ include 'koneksi.php';
                 <button name="submit" class="btn">Login</button>
             </div>
         </form>
+        <a> Belum Punya Akun?<a href="form.php"> Daftar Sekarang</a></a>
         <?php 
         if (isset($_POST['submit'])) {
 
@@ -37,14 +38,14 @@ include 'koneksi.php';
             $user = mysqli_real_escape_string($koneksi, $_POST['user']);
             $pass = mysqli_real_escape_string($koneksi, $_POST['pass']);
          
-            $cek = mysqli_query($koneksi, "SELECT * FROM tabel_admin WHERE username = '".$user."' AND password = '".md5($pass)."'");
+            $cek = mysqli_query($koneksi, "SELECT * FROM tb_user WHERE userid = '".$user."' AND password = '".md5($pass)."'");
             //mencocokkan apabila user dan password sama dengan yang ada didatabase maka akan keluar angka 1 jika tidak ada maka 0
             if( mysqli_num_rows($cek) > 0){
                             $d = mysqli_fetch_object($cek);
                             $_SESSION['status_login'] = true;
-                            $_SESSION['para_admin'] = $d;
-                            $_SESSION['id'] = $d->admin_id;
-                            echo '<script>window.location="dashboard.php"</script>';
+                            $_SESSION['para_user'] = $d;
+                            $_SESSION['id'] = $d->id_user;
+                            echo '<script>window.location="indexuser.php"</script>';
                         }else{
                             echo '<script>alert("Username dan Password Salah!")</script>';
                         }
