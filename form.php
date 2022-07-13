@@ -17,7 +17,9 @@
     </head>
     <body id="bg-registrasi">
         <div class="box-registrasi">
-        <h1>Registrasi Toko Gadget Online</h1>
+        <p class="login-text" style="font-size: 2rem; font-weight: 800;"  >Registrasi User
+            </p>
+            <img class="logo" src="images/logo_long.png" width="430px">
         <form action="" method="POST" >        
             <table>
                 <tr>
@@ -50,7 +52,9 @@
                     <td><input type="submit" name="submit" value="Registrasi" class="tombolregistrasi"></td>
                 </tr>
             </table>
+            <a> Sudah Punya Akun?<a href="loginuser.php"> Login Sekarang</a></a>
         </form>
+
         <?php 
         
             if (isset($_POST['submit'])) {
@@ -74,7 +78,7 @@
                     
                       echo '<script language="javascript">
                                       alert ("Registrasi Berhasil!");
-                                      window.location="login.php";
+                                      window.location="loginuser.php";
                                       </script>';
                                       exit();
                 }
