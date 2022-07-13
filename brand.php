@@ -32,6 +32,12 @@
           </a>
         </li>
         <li>
+          <a href="pesanan.php" >
+            <i class='bx bx-task' ></i>
+            <span class="links_name">Pesanan</span>
+          </a>
+        </li>
+        <li>
           <a href="kategori.php" >
             <i class='bx bx-box' ></i>
             <span class="links_name">Kategori</span>
@@ -53,6 +59,12 @@
           <a href="brand.php" class="active">
             <i class='bx bx-book-alt' ></i>
             <span class="links_name">Brand</span>
+          </a>
+        </li>
+        <li>
+          <a href="pesan.php" >
+            <i class='bx bx-message-square-detail'></i>
+            <span class="links_name">Message </span>
           </a>
         </li>
         <li>
